@@ -21,7 +21,7 @@ end
 
 # solution: One part Extract Method ...
 def charge(amount, credit_card_number)
-  connect do |connection| # <--- on this line of code, "connect" is a method call and the ruby block is the parameter
+  connect do |connection| # <--- on this line of code, "connect" is a method call and the ruby block is the argument
     connection.send(amount, credit_card_number)
   end
 end
