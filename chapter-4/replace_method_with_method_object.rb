@@ -1,7 +1,8 @@
 # Replace Method with Method Object
 # =================================
 
-# Problem: You have a long method that uses local variables in such a way that you cannot apply Extract Method.
+# Problem: You have a long method that uses local variables in such a
+# way that you cannot apply Extract Method.
 
 # Solution: Turn the method into its own object so that all the local variables become instance variables on that object. You can then decompose the method into other methods on the same object.
 
@@ -78,3 +79,5 @@ def important_thing
 end
 
 # Don't forget to test!
+
+

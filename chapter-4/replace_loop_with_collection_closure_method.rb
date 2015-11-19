@@ -1,7 +1,8 @@
 # Replace Loop with Collection Closure Method
 # ===========================================
 
-# Problem: You are processing a collection's elements in a loop. You want to make the code more readable.
+# Problem: You are processing a collection's elements in a loop.
+# You want to make the code more readable.
 
 # Solution: Replace the loop with a collection closure method.
 
@@ -31,8 +32,8 @@ employees.each do |e|
 end
 
 # solution:
-managerOffices = employees.select {|e| e.manager?}.
-                           collect {|e| e.office}
+managerOffices = employees.select { |e| e.manager? }.
+                           collect { |e| e.office }
 
 # Note from the author:
 "It might be useful to think of this chaining as
@@ -43,3 +44,5 @@ I’ve laid out the code here—listing each filter on
 its own line makes the transformations a little clearer."
 
 # Don't forget to test!
+
+

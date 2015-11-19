@@ -1,7 +1,8 @@
 # Extract Surrounding Method
 # ==========================
 
-# Problem: You have two methods that contain nearly identical code. The variance is in the middle of the method.
+# Problem: You have two methods that contain nearly identical code.
+# The variance is in the middle of the method.
 
 # Solution: Extract the duplication into a method that accepts a block and yields back to the caller to execute the unique code.
 
@@ -41,3 +42,6 @@ end
 # BONUS: Separates business logic from the infrastructure logic required to iterate over the collection, which helps during maintenance.
 
 # Don't forget to test!
+
+
+

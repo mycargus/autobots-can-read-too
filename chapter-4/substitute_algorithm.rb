@@ -18,7 +18,8 @@ def found_friends(people)
     end
     if(person == "Kent")
       friends << "Kent"
-end end
+    end
+  end
   return friends
 end
 
@@ -37,7 +38,7 @@ it is easier to substitute the algorithm first
 into something easier for the change you need to
 make."
 
-# --> simply first, then replace
+# --> simplify first, then replace
 
 
 # Don't forget to test!
