@@ -21,7 +21,7 @@ offices = []
 employees.each { |e| offices << e.office }
 
 # (map is an alias for collect)
-offices = employees.collect { |e| e.office }
+offices = employees.map { |e| e.office }
 
 
 # What about a loop that includes more than one task?
@@ -40,7 +40,7 @@ managerOffices = employees.select { |e| e.manager? }.
 a series of pipes and filters. Here, we’ve piped
 the original collection through the select filter
 and onto the collect filter. Also note the way
-I’ve laid out the code here—listing each filter on
+I’ve laid out the code here—-listing each filter on
 its own line makes the transformations a little clearer."
 
 # Don't forget to test!

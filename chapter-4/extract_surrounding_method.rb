@@ -4,7 +4,8 @@
 # Problem: You have two methods that contain nearly identical code.
 # The variance is in the middle of the method.
 
-# Solution: Extract the duplication into a method that accepts a block and yields back to the caller to execute the unique code.
+# Solution: Extract the duplication into a method that accepts a block
+# and yields back to the caller to execute the unique code.
 
 # EXAMPLE from the text (p.158)
 def charge(amount, credit_card_number)
@@ -44,4 +45,34 @@ end
 # Don't forget to test!
 
 
+# ANOTHER EXAMPLE
 
+describe 'Greeting the Twitter user' do
+
+  # This spec will fail without refactor
+  context 'when the user has unread notifications' do
+    it 'says "You have unread notifications!"' do
+      user = User.find('Bob')
+      print_greeting(user)
+    end
+  end
+
+  # This spec will fail without refactor
+  context 'when the user has a new follower' do
+    it 'says "You have a new follower!"' do
+      user = User.find('Alice')
+      print_greeting(user)
+    end
+  end
+
+  context 'when the user has no custom message' do
+    it 'only says "Hello, <name>."' do
+      user = User.last
+      print_greeting(user)
+    end
+  end
+
+  def print_greeting(user)
+    printf "Hello, #{user.name}."
+  end
+end
