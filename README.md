@@ -1,9 +1,13 @@
 # QA Automation Book Club
 
-## Current book: 
+A repo for sharing code, presentation links, etc with fellow book clubbers.
 
-`The Well-Grounded Rubyist` by David A. Black
+Click a book title below and the interwebs will take you to our shared notes for that book.
+
+## Current book:
+
+[The Well-Grounded Rubyist](https://github.com/mycargus/autobots-can-read-too/tree/master/the_well_grounded_rubyist/README.md)
 
 ## Past books:
 
-`Refactoring: Ruby Edition` by Jay Fields, Martin Fowler, and Shane Harvie
+[Refactoring: Ruby Edition](https://github.com/mycargus/autobots-can-read-too/tree/master/refactoring_ruby/README.md)
